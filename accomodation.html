@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accomodation</title>
+    <style>
+        body {
+            background-color: #f0f0f0; 
+        }
+        header { 
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        form {
+            margin: 0 auto;
+            width: 50%;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tilburg University</h1>
+        <img src="logo.jpg" alt="University Logo" width="150" height="150">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="This leads you to another page.">Home</a></li>
+                <li><a href="management.html" title="This leads you to the management page.">Management</a></li>
+                <li><a href="admissions.html" title="This leads you to the admissions page.">Admissions</a></li>
+                <li><a href="academics.html" title="This leads you to the academics page.">Academics</a></li>
+                <li><a href="gallery.html" title="This leads you to the gallery page.">Gallery</a></li>
+                <li><a href="accomodation.html" title="This leads you to the accomodation page.">Accomodation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Book Your Hostel</h2>
+        <form action="submit" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="regNO">Reg No</label>
+            <input type="text" id="regNo" name="regNo" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="course">Desired Hostel:</label>
+            <select id="gender" name="gender">
+                <optgroup label="Male Hostels">
+                   <option value="hostel a">Hostel A</option>
+                   <option value="hostel b">Hostel B</option>
+                   <option value="hostel c">Hostel C</option>
+                </optgroup>
+                <optgroup label="Female Hostels">
+                   <option value="hostel d">Hostel D</option>
+                   <option value="hostel e">Hostel E</option>
+                   <option value="hostel f">Hostel F</option> 
+                </optgroup>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
+
